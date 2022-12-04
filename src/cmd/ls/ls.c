@@ -137,7 +137,7 @@ main(argc, argv)
 			uflg++; break;
 		case '?':
 		default:
-			fputs("usage: ls [ -1ACLFRacdfgiloqrstu ] [ file ]\n", stderr);
+			fputs("Usage: ls [ -1ACLFRacdfgiloqrstu ] [ file ]\n", stderr);
 			exit(1);
 	}
 	if (!lflg)
