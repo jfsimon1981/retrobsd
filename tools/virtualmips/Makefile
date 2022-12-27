@@ -16,8 +16,7 @@ CFLAGS		= -DSIM_PIC32 -DPIC32MX7 -DMAX32
 #CFLAGS		= -DSIM_PIC32 -DPIC32MX7 -DUBW32
 
 CC          = gcc -g
-#CFLAGS		+= -Wall -Werror -MT $@ -MD -MP -MF .deps/$*.dep
-CFLAGS		+= -Wall -MT $@ -MD -MP -MF .deps/$*.dep
+CFLAGS		+= -Wall -Werror -MT $@ -MD -MP -MF .deps/$*.dep
 LIBS		= -lpthread
 
 CFLAGS      += $(shell pkg-config libelf --cflags)
